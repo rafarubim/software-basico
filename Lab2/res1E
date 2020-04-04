@@ -1,0 +1,16 @@
+Compilar o novo programa resultou na seguinte impressão:
+
+0x7fffa24708f0 - 41
+0x7fffa24708f1 - 20
+0x7fffa24708f2 - 0a
+0x7fffa24708f3 - 24
+0x7fffa24708f4 - 00
+
+Conclui-se que o código ASCII dos seguintes caracteres é (resultado também convertido para decimal):
+
+'A' -> 41hex ou 65dec
+' ' -> 20hex ou 32dec
+'\n' -> 0ahex ou 10dec
+'$' -> 24hex ou 36dec
+'\0' -> 00hex ou 00dec
+

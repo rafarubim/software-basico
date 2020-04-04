@@ -1,0 +1,12 @@
+Na repetição da execução do programa, trocando a variável "i" do tipo "int" para "long int", obteve-se:
+
+0x7fff186fe688 - 10
+0x7fff186fe689 - 27
+0x7fff186fe68a - 00
+0x7fff186fe68b - 00
+0x7fff186fe68c - 00
+0x7fff186fe68d - 00
+0x7fff186fe68e - 00
+0x7fff186fe68f - 00
+
+Conclui-se que o long int ocupa mais bytes na memória (8) do que o int, mas a lógica para o armazenamento do número em bytes ainda é o mesmo (little-endian)

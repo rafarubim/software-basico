@@ -1,0 +1,28 @@
+function
+	ret? $0 $1
+end
+function
+	v0 = call 0 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end
+function
+	v0 = call 1 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end
+function
+	v0 = call 2 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end
+function
+	v0 = call 3 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end
+function
+	v0 = call 4 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end

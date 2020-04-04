@@ -1,0 +1,20 @@
+Resultado da execução do programa:
+
+0x7ffcf24d9a5c - 10
+0x7ffcf24d9a5d - 27
+0x7ffcf24d9a5e - 00
+0x7ffcf24d9a5f - 00
+
+A variável "i" é um inteiro portanto ocupa 4 bytes, que é a quantidade de vezes que rodou o while da função dump. Por isso, também, os endereços de memória obtidos do resultado da execução são consecutivos.
+
+Convertendo, 10000dec = 10011100010000bin, portanto a variável "i" na memória, separada em bytes, é representada da seguinte maneira:
+
+00010000 00100111 00000000 00000000
+(bytes ordenados no padrão da arquitetura utilizada - little-endian)
+
+Convertendo os bytes separadamente para a base hexadecimal, obtém-se, respectivamente:
+
+10 27 00 00
+
+Resultado obtido corretamente na execução (a impressão foi feita em base hexadecimal), obtido da leitura dos bytes consecutivos.
+

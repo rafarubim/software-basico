@@ -1,0 +1,19 @@
+Na repetição da execução do programa, trocou-se a linha
+
+  int i = 10000;
+
+por
+
+  char i = 97;
+
+e depois da chamada da função dump foram acrescentadas as linhas:
+
+  i = 'a';
+  dump(&i, sizeof(i));
+
+executando o programa, obteve-se:
+
+0x7ffd25da5c8f - 61
+0x7ffd25da5c8f - 61
+
+Conclui-se que o char ocupa 1 byte na memória (a função foi chamada duas vezes), mas a lógica para o armazenamento do número ou caracter ('a' equivale a 97) é como se esperava, pois 97dec = 61hex

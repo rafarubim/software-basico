@@ -1,0 +1,1 @@
+A cada iteração do "for", (*s - '0') é o valor numérico de um caracter que representa um número. Isso converterá '5'(que equivale ao número 53, pelo padrão ASCII) para 5, por exemplo. Ao multiplicar "a" por 10 e somar o novo número a cada iteração, a função "string2num" converterá uma cadeia de caracteres que representam números no número em si (Ex: "234" -> 234), retornando-o.

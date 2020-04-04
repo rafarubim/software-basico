@@ -1,0 +1,6 @@
+Na repetição da execução do programa, trocando a variável "i" do tipo "int" para "short int", obteve-se:
+
+0x7ffec71b19fe - 10
+0x7ffec71b19ff - 27
+
+Conclui-se que o short int ocupa menos bytes na memória (2) do que o int, mas a lógica para o armazenamento do número em bytes ainda é o mesmo (little-endian)

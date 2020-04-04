@@ -1,0 +1,86 @@
+/* Rafael Rubim Cabral 	- 1511068 - 3WA */
+/* Lívia Aloise					- 1510952 - 3WA */
+
+		Relatório T2:
+
+	Todos os casos de teste executaram com sucesso. A função geracod informa os erros de programação apropriadamente caso haja algum problema na sintaxe SBF (erros semânticos quase não são tratados). Todos os comandos e operações foram testados de várias maneiras possíveis. Procurou-se testá-los em diferentes disposições e permutações e com diferentes parâmetros. Ex: a operação de atribuição com operação foi testada com operandos constantes, variáveis, parâmetros e misturas.
+	Alguns scripts SBF utilizados para teste e traduzidos com sucesso:
+
+function
+	ret? $5 $4
+	ret? $0 $2
+	ret? $0 $5
+end
+*****************************************************************************************************
+function
+	v0 = $1 + p0
+	v0 = v0 + $1
+	v1 = v0 + v0
+	v2 = $2 * $3
+	v3 = v1 * v2
+	v4 = v1 * v1
+	v0 = v3 - v4
+	v0 = v0 - p0
+	v0 = $0 - v0
+	ret? $0 v0
+end
+*****************************************************************************************************
+function
+	v0 = $100 - p0
+	ret? v0 p0
+	v2 = p0 + $1
+	v3 = call 0 v2
+	v4 = p0 + v3
+	ret? $0 v4
+end
+*****************************************************************************************************
+function
+	ret? $0 $1
+end
+function
+	v0 = call 0 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end
+function
+	v0 = call 1 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end
+function
+	v0 = call 2 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end
+function
+	v0 = call 3 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end
+function
+	v0 = call 4 $0
+	v0 = $2 * v0
+	ret? $0 v0
+end
+*****************************************************************************************************
+function
+	ret? p0 $1
+	v0 = p0 + $0
+	v1 = v0 - $1
+	v1 = call 0 v1
+	v0 = v0 * v1
+	ret? $0 v0
+end
+*****************************************************************************************************
+function
+	v0 = p0 * p0
+	ret? $0 v0
+	end
+	function
+	ret? p0 $0
+	v0 = p0 - $1
+	v1 = call 0 p0
+	v0 = call 1 v0
+	v0 = v0 + v1
+	ret? $0 v0
+end
