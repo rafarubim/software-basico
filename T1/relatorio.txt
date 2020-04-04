@@ -1,0 +1,67 @@
+/* RAFAEL RUBIM CABRAL 1511068 3WA */
+/* LIVIA ALOISE 1510952 3WA */
+
+			Relatório do estado do módulo teste.c
+
+função int128_attr: funciona perfeitamente.
+Testes realizados com atribuição dos longs:
+0x7654321234567891
+0x8abcdefedcbabcd0
+
+função int128_shl: funciona perfeitamente.
+Testes realizados com seguintes operações:
+a = 0x0000000000000000 7654321234567891
+t=a<<0
+t<<=4
+t<<=64
+t<<=127
+t=a<<i*4, i = 0..31
+t=a<<64
+t=a<<127
+
+função int128_shr: funciona perfeitamente.
+Testes realizados com seguintes operações:
+a = 0x7654321234567891 0000000000000000
+b = 0x8abcdefedcbabcd0 0000000000000000
+t=a>>0
+t>>=4
+t>>=64
+t>>=127
+t=a>>i*4, i = 0..31
+t=b>>i*4, i = 0..31
+t=a>>64
+t=b>>64
+t=a>>127
+t=b>>127
+
+função int128_write: funciona perfeitamente.
+Testes realizados com:
+4 gravações consecutivas
+Comando hexdump
+
+função int128_read: funciona perfeitamente.
+Testes realizados com:
+4 leituras consecutivas
+Dump (impressão) dos valores lidos
+1 leitura falha (fim de arquivo)
+
+função int128_add: funciona perfeitamente.
+Testes realizados com somas a+b tais que:
+a = b = 0x0000000000000000 0000000100000000
+a = b = 0x0000000100000000 0000000000000000
+a = b = 0x0000000000000000 1000000000000000
+a = b = 0x1000000000000000 0000000000000000
+
+0xffffffffffffffff
+0x0f0f0f0f0f0f0f0f
+0000000000000000
+função int128_sub: funciona perfeitamente.
+Testes realizados com subtrações a-b tais que:
+a = b = 0x0000000000000000 0000000100000000
+a = b = 0x0000000100000000 0000000000000000
+a = 0x0000000000000000 0000000000000000, b = 0x0000000000000000 0000000000000001
+a = 0x0000000000000000 0000000000000000, b = 0x0000000000000000 0000000000001000
+a = 0x0000000000000000 0000000000000000, b = 0x0000000000001000 0000000000000000
+a = 0x0000000000000000 0000000000000000, b = 0x0000000000000000 8000000000000000
+a = 0xffffffffffffffff ffffffffffffffff, b = 0x0f0f0f0f0f0f0f0f 0f0f0f0f0f0f0f0f
+a = 0xffffffffffffffff ffffffffffffffff, b = 0xf0f0f0f0f0f0f0f0 f0f0f0f0f0f0f0f0
