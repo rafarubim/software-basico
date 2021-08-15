@@ -1,0 +1,22 @@
+Programa 1)
+
+x=-1, y=2
+x é menor do que y? sim
+
+Programa 2)
+
+x=-1, y=2
+x é menor do que y? nao
+
+O programa 1 interpreta as variáveis como signed, portanto 0xffffffff é -1 (invertendo e somando 1).
+Portanto x < y
+
+O programa 2 interpreta as variáveis como unsigned, portanto 0xffffffff é 2^32-1 (A impressão é de -1 porque %d imprime variáveis como signed)
+Portanto x > y
+
+Programa 3)
+
+x=-1, y=2
+x é menor do que y? nao
+
+Não entendi o que aconteceu no programa 3. Mas eu acho que é porque quando os tipos são diferentes, ele interpreta ambos como unsigned em comparações. O monitor me confirmou. êêêêê

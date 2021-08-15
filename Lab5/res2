@@ -1,0 +1,16 @@
+12
+0x601038 - a4
+0x601039 - a3
+0x60103a - a2
+0x60103b - a1
+0x60103c - b2
+0x60103d - b1
+0x60103e - 00
+0x60103f - 00
+0x601040 - c4
+0x601041 - c3
+0x601042 - c2
+0x601043 - c1
+
+A impressão ocorreu na ordem esperada, mas não entendi o buraco na memória.
+Após a explicação em sala de aula, entendi que isso é feito por questões de arquitetura da máquina, uma vez que o alinhamento de variáveis na memória de 8 em 8 bits (ou bytes?) é melhor para o computador.

@@ -1,0 +1,1 @@
+Converter para char trunca o inteiro, mantendo apenas o byte restante (a interpretação do complemento a 2 estará correto pois se quer interpretar o resultado com 8 bits). Converter para signed int, logo após, funcionará, pois o compilador acrescenta 1's à esquerda até completar 4 bytres.

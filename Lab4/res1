@@ -1,0 +1,33 @@
+Resultado que espero:
+
+dump de c:
+96
+dump de s:
+fdff
+dump de i:
+69ffffff
+
+Resultado impresso:
+
+dump de c: 
+0x7fff63f8889f - 96
+dump de s: 
+0x7fff63f8889c - fd
+0x7fff63f8889d - ff
+dump de i: 
+0x7fff63f88898 - 69
+0x7fff63f88899 - ff
+0x7fff63f8889a - ff
+0x7fff63f8889b - ff
+
+Os valores foram impressos dessa maneira porque:
+
+char c = 150dec = 10010110bin
+char c na memoria: 10010110 (96 em hexa)
+
+short s = -3 -> 3dec = 11bin -> Inverta em 16 bits (tamanho do short): 11111111 11111100 -> Some 1: 11111111 11111101
+shot s na memoria (little-endian): 11111101 11111111 (fd | ff, lendo separadamente em hexa)
+
+int i = -151 -> 151dec = 10010111bin -> Inverta em 32 bits (tamanho do int): 11111111 11111111 11111111 01101000  -> Some 1: 11111111 11111111 11111111 01101001
+int i na memoria (little-endian): 01101001 11111111 11111111 11111111 (69 | ff | ff | ff, lendo separadamente em hexa)
+

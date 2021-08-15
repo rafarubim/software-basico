@@ -1,0 +1,2 @@
+Após terminar meu código, vi que minha amiga fez de forma bem mais simples, sem cruar uma variável auxiliar.
+Por exemplo, na questão (b) ela retornou (x << n) | (x >> (8-n)) ao invés de (a << n) | (x >> (8-n)). O dela funcionou, o que achei interessante, pois achei que a operação binária alteraria o valor de x com o operador ++ faz.

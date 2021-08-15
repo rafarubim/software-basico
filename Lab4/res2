@@ -1,0 +1,29 @@
+Resultado que espero:
+
+32765dec = 01111111 11111101bin -> Inverte e soma 1 -> 10000000 00000011 -> Little-Endian -> 00000011 10000000 -> Hexa: 03 | 80
+
+32771dec = 10000000 00000011bin -> Little-Endian -> 00000011 10000000 -> Hexa: 03 | 80
+
+l = -32765, k = 32771
+dump de l:
+03
+80
+dump de k:
+03
+80
+
+Resultado impresso:
+
+l=-32765, k=32771 
+dump de l: 
+0x7ffcabbdc83e - 03
+0x7ffcabbdc83f - 80
+dump de k: 
+0x7ffcabbdc83c - 03
+0x7ffcabbdc83d - 80
+
+Os valores foram impressos dessa maneira porque:
+
+32765dec = 01111111 11111101bin -> Inverte e soma 1 -> 10000000 00000011 -> Little-Endian -> 00000011 10000000 -> Hexa: 03 | 80
+
+32771dec = 10000000 00000011bin -> Little-Endian -> 00000011 10000000 -> Hexa: 03 | 80

@@ -1,0 +1,12 @@
+int b[2];
+short a[2][3];
+
+O array b ocupa 8 bytes e o arrat a, 12 bytes
+Acho que são armazenados em bytes consecutivos, na ordem dos índices.
+No caso de a, acredito que a[i][j] varia em bytes consecutivos variando j, enquanto i mantém-se fixo. No limite do índice j, os próximos 2 bytes (short) representarão a[i+1][0].
+
+Após execução:
+
+A ordem de impressão dos valores colocados nos arrays confirmou meu pensamento.
+
+

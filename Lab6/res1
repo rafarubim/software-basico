@@ -1,0 +1,4 @@
+	O programa em assembly começa colocando 0 no registrador ebx (representando i) e o endereço de nums em r12 (representando p).
+	Após isso, ele testa se ebx (i) possui o valor 4 com cmpl. Se for 4, a execução do programa pula para o marcador L2, encerrando o loop for. Se não for 4, a execução prossegue logo abaixo de L1, após a comparação.
+	O valor no endereço descrito por r12 é copiado para eax por propósito de impressão pelo printf.
+	Em seguida, adiciona-se 1 a ebx e 4 a r12, movendo a execução novamente para o marcador L1 (realizando o loop for).

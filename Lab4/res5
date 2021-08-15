@@ -1,0 +1,13 @@
+Eu achava que quando a seguinte conversão fosse feita:
+
+signed char sc = -1;
+unsigned int ui = sc;
+
+Acontecesse o seguinte:
+Conversão signed -> unsigned: Não muda os bits, apenas sua interpretação
+Conversão unsigned char -> unsigned int: Completará os bits à esquerda com 0's (Por ser conversão entre tipos unsigned)
+
+Porém o resultado não foi como esperado. Os bits à esquerda foram completados com 1's. Portanto imagino que a conversão de tamanhos ocorra antes da conversão interpretativa de tipos. Assim seria:
+
+Conversão signed char -> signed int: Completará os bits à esquerda com 1's
+Conversão signed -> unsigned: Não muda os bits, apenas sua interpretação

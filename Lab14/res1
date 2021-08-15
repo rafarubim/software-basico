@@ -1,0 +1,1 @@
+Se o código executado não incluir o protótipo na main, o programa não imprime o valor esperado (pois foo não retorna corretamente), mas outro que não faz sentido. Não entendi o ocorrido, mas o André falou que quando a função não é declarada no arquivo, o compilador implicitamente assume seus tipos de retorno e argumentos como inteiros.
